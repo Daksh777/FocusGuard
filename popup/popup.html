@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
+    <script src="index.js" defer></script>
     <title>Chrome Addon v3: popup</title>
 </head>
+
 <body>
-    This is the <span class="special-text">HTML</span> body of the addon.
+    <div id="mainContainer">
+        <div id="upperMain">
+            <div id="upperMainLogo">
+                <div id="logoContainer">
+                    <div id="logoWhiteContainer"></div>
+                </div>
+                <div id="logoTxtContainer">FocusGuard</div>
+            </div>
+            <div id="upperMainDropdown">
+                <div id="dropDownSelected">
+                <div id="dropDownTxt">YouTube</div>
+                <div id="dropDownSvg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu-down</title><path d="M7,10L12,15L17,10H7Z" /></svg></div>
+                <div id="dropDownContent">
+                    <button class="socialBtn" id="reddit">Reddit</button>
+                    <button class="socialBtn" id="instagram">Instagram</button>
+                    <button class="socialBtn" id="linkdin">LinkedIn</button>
+                    <button class="socialBtn" id="facebook">Facebook</button>
+                </div>
+            </div>
+            </div>
+            <div id="upperMainSettings"></div>
+        </div>
+        <div id="lowerMain">
+            <div id="leftLowerMain"></div>
+            <div id="rightLowerMain"></div>
+        </div>
+    </div>
 </body>
+
 </html>
