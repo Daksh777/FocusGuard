@@ -1,11 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #222;
     color: #eee;
 
-    width: 16rem;
-    height: 4rem;
+    width: 50em;
+    height: 37.5em;
 }
 
-.special-text {
-    color: red;
+#mainContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1.5fr 9fr;
+}
+
+#upperMain{
+    display: flex;
+   justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#upperMainLogo{
+    width: 14.5625em;
+    height: 3.5625em;
+    display: grid;
+    grid-template-columns: 2.7fr 9fr;
+    gap: 1em;
+    cursor: default;
+}
+
+#upperMainDropdown{
+    position: relative;
+    /* background-color: black; */
+    width: 8.5625em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+#dropDownSelected{
+    border: 1px solid #938F99;
+    border-radius: 5px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3.5625em;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropDownTxt{
+    font-size: 2.5vw;
+    color: #CAC4D0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#dropDownSvg{
+    height: 100%;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    filter: invert(100%) sepia(1%) saturate(6167%) hue-rotate(256deg) brightness(93%) contrast(72%);
+}
+
+#dropDownContent{
+    display: none;
+    grid-template-rows: repeat(1fr, 4);
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    height: 14.25em;
+    width: 8.5625em;
+    transition: opacity 1s ease-in-out;
+}
+
+.socialBtn{
+    width: 6.2625em;
+    height: 100%;
+    border: 1px solid #938F99;
+    border-radius: 5px;
+    font-size: 2.5vw;
+    background: none;
+    color: #CAC4D0;
+    cursor: pointer;
+}
+
+#dropDownSelected:hover #dropDownContent{
+    display: grid;
+}
+
+#logoContainer{
+    background-color: #004A77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    height: 3.3em;
+}
+
+#logoWhiteContainer{
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+}
+
+#logoTxtContainer{
+    font-size: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+#upperMainSettings{
+    /* background-color: red; */
+    width: 7.5625em;
+    height: 3.5625em;
+}
+
+#lowerMain{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.5fr 8fr;
+}
+
+#leftLowerMain{
+ 
+}
+
+#rightLowerMain{
+
 }
